@@ -13,7 +13,7 @@ class Services extends Component {
         <Container>
           <h1 className="globalTitle">my services</h1>
           <Row>
-            <Col lg={4} md={4} sm={12}>
+            <Col lg={4} md={6} sm={12}>
               <div className="text-center serviceCard">
                   <img src={WebLogo} alt="Web Logo"></img>
                   <h2 className="serviceCardTitle">Web Development</h2>
@@ -22,7 +22,7 @@ class Services extends Component {
                   </p>
               </div>
             </Col>
-            <Col lg={4} md={4} sm={12}>
+            <Col lg={4} md={6} sm={12}>
               <div className="text-center serviceCard">
                   <img src={MobileLogo} alt="Mobile Logo"></img>
                   <h2 className="serviceCardTitle">Mobile Development</h2>
@@ -31,7 +31,7 @@ class Services extends Component {
                   </p>
               </div>
             </Col>
-            <Col lg={4} md={4} sm={12}>
+            <Col lg={4} md={6} sm={12}>
               <div className="text-center serviceCard">
                   <img src={GraphicsLogo} alt="Graphics Logo"></img>
                   <h2 className="serviceCardTitle">Graphics Design</h2>
