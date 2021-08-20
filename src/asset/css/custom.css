@@ -1,3 +1,12 @@
+.globalTitle {
+  margin: 5rem 0 3rem 0;
+  font-family: 'Montserrat' sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: #0073E6;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .topBannerFixed {
   background-image: url('../image/banner.jpg');
   min-height: 600px;
@@ -28,4 +37,28 @@
   font-size: 22px;
   color: #fff;
   margin-bottom: 15px;
+}
+
+
+.serviceCard {
+  margin-bottom: 15px;
+  padding:60px 30px;
+  box-shadow: 0 0 4px 0 rgba(0,115,230,0.2);
+  height: 22rem;
+  transition: 0.3s;
+}
+.serviceCard:hover {
+  box-shadow: 0 0 8px 0 rgba(0,115,230,0.2);
+}
+.serviceCardTitle {
+  font-family: 'Raleway' sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.serviceCardSubTitle {
+  font-family: 'Raleway' sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #7F7E7E;
 }
