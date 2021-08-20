@@ -1,0 +1,31 @@
+.topBannerFixed {
+  background-image: url('../image/banner.jpg');
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.bannerOverlay {
+  position: absolute;
+  width: 100%;
+  min-height: 600px;
+  background: rgba(0,0,0,0.7);
+}
+.topBannerContent {
+  margin-top: 10rem;
+}
+.topBannerContent h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.topBannerContent h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 15px;
+}
