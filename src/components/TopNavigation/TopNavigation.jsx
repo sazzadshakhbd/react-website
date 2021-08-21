@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import '../../asset/css/bootstrap.min.css';
 import '../../asset/css/custom.css';
+import whiteLogo from '../../asset/image/navlogo.svg';
+import blueLogo from '../../asset/image/navlogoScroll.svg';
 import {Navbar, Container, Nav} from 'react-bootstrap';
 
 class TopNavigation extends Component {
@@ -8,16 +10,17 @@ class TopNavigation extends Component {
   constructor() {
     super();
     this.state={
-      navbarBrand: 'navTitle'
+      navbarBrand: 'navTitle',
+      navbarBrandLogo: [whiteLogo]
     }
   }
 
   onScrollMethod = () => {
     if(window.scrollY > 100) {
-      this.setState({navbarBrand: 'navTitleScroll'})
+      this.setState({navbarBrand: 'navTitleScroll', navbarBrandLogo: [blueLogo]})
     } 
     else if (window.scrollY < 100) {
-      this.setState({navbarBrand: 'navTitle'})
+      this.setState({navbarBrand: 'navTitle', navbarBrandLogo: [whiteLogo]})
     }
   }
 
@@ -30,7 +33,7 @@ class TopNavigation extends Component {
       <Fragment>
         <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container fluid={true}>
-            <Navbar.Brand className={this.state.navbarBrand}>Sazzad Shakh</Navbar.Brand>
+            <Navbar.Brand className={this.state.navbarBrand}><img src={this.state.navbarBrandLogo} alt="Navbar Brand Logo"></img> Sazzad Shakh</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto"></Nav>
