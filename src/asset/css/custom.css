@@ -62,3 +62,16 @@
   font-weight: 400;
   color: #7F7E7E;
 }
+
+.navTitle {
+  color:#fff !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.navTitleScroll {
+  color:#0073E6 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
