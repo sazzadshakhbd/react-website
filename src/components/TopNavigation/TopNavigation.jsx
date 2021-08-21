@@ -11,16 +11,18 @@ class TopNavigation extends Component {
     super();
     this.state={
       navbarBrand: 'navTitle',
-      navbarBrandLogo: [whiteLogo]
+      navbarBrandLogo: [whiteLogo],
+      navbarBackground: 'navbarTransparent',
+      navLinkColor: 'linkColorWhite'
     }
   }
 
   onScrollMethod = () => {
     if(window.scrollY > 100) {
-      this.setState({navbarBrand: 'navTitleScroll', navbarBrandLogo: [blueLogo]})
+      this.setState({navbarBrand: 'navTitleScroll', navbarBrandLogo: [blueLogo], navbarBackground: 'navbarWhite', navLinkColor: 'linkColorBlack'})
     } 
     else if (window.scrollY < 100) {
-      this.setState({navbarBrand: 'navTitle', navbarBrandLogo: [whiteLogo]})
+      this.setState({navbarBrand: 'navTitle', navbarBrandLogo: [whiteLogo], navbarBackground: 'navbarTransparent', navLinkColor: 'linkColorWhite'})
     }
   }
 
@@ -31,19 +33,19 @@ class TopNavigation extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar className={this.state.navbarBackground} fixed="top" collapseOnSelect expand="lg" variant="dark">
           <Container fluid={true}>
             <Navbar.Brand className={this.state.navbarBrand}><img src={this.state.navbarBrandLogo} alt="Navbar Brand Logo"></img> Sazzad Shakh</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto"></Nav>
               <Nav>
-                <Nav.Link href="#home" className="text-uppercase">home</Nav.Link>
-                <Nav.Link href="#services" className="text-uppercase">services</Nav.Link>
-                <Nav.Link href="#courses" className="text-uppercase">courses</Nav.Link>
-                <Nav.Link href="#portfolio" className="text-uppercase">portfolio</Nav.Link>
-                <Nav.Link href="#contact" className="text-uppercase">contact</Nav.Link>
-                <Nav.Link href="#about" className="text-uppercase">about</Nav.Link>
+                <Nav.Link className={this.state.navLinkColor} href="#home">home</Nav.Link>
+                <Nav.Link className={this.state.navLinkColor} href="#services">services</Nav.Link>
+                <Nav.Link className={this.state.navLinkColor} href="#courses">courses</Nav.Link>
+                <Nav.Link className={this.state.navLinkColor} href="#portfolio">portfolio</Nav.Link>
+                <Nav.Link className={this.state.navLinkColor} href="#contact">contact</Nav.Link>
+                <Nav.Link className={this.state.navLinkColor} href="#about">about</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
