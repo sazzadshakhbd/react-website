@@ -103,3 +103,12 @@ transition: background-color 400ms linear;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
+
+
+
+.analysisContent p {
+  font-family: 'Raleway' sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #7F7E7E;
+}
