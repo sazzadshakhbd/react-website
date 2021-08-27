@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import {Container, Row, Col, Card} from 'react-bootstrap';
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCheckCircle} from '@fortawesome/free-solid-svg-icons';
 class Summary extends Component {
   render() {
     return (
@@ -10,7 +11,7 @@ class Summary extends Component {
             <Container>
               <Row>
                 <Col lg={8} md={6} sm={12}>
-                  <Row>
+                  <Row className="counterSection">
                     <Col lg={6} md={6} sm={6}>
                       <div className="text-center">
                         <h1 className="counterNumber">100</h1>
@@ -28,15 +29,15 @@ class Summary extends Component {
                   </Row>
                 </Col>
                 <Col lg={4} md={6} sm={12}>
-                  <Card>
+                  <Card className="counterCard">
                     <Card.Body>
                       <Card.Title className="counterCardTitle">How i Work</Card.Title>
                       <Card.Text className="counterCardSubTitle">
                         <ul>
-                          <li>requirement gathering</li>
-                          <li>system analysis</li>
-                          <li>coding testing</li>
-                          <li>implementation</li>
+                          <li><FontAwesomeIcon className="counterIconColor" icon={faCheckCircle} />  requirement gathering</li>
+                          <li><FontAwesomeIcon className="counterIconColor" icon={faCheckCircle} /> system analysis</li>
+                          <li><FontAwesomeIcon className="counterIconColor" icon={faCheckCircle} /> coding testing</li>
+                          <li><FontAwesomeIcon className="counterIconColor" icon={faCheckCircle} /> implementation</li>
                         </ul>
                       </Card.Text>
                     </Card.Body>

@@ -130,6 +130,9 @@ transition: background-color 400ms linear;
   width: 100%;
   min-height: 350px;
 }
+.counterSection {
+  margin-top: 15%;
+}
 .counterNumber {
   color: #fff;
   font-size: 48px;
@@ -143,6 +146,11 @@ transition: background-color 400ms linear;
   font-family: 'Raleway' sans-serif;
   text-transform: uppercase;
   font-weight: 400;
+}
+.counterCard {
+  margin-top: 15%;
+  border-radius: 2px;
+  padding: 10px;
 }
 .counterCardTitle {
   color: #000;
@@ -162,4 +170,8 @@ transition: background-color 400ms linear;
   font-size: 14px;
   color: #000;
   margin-bottom: 10px;
+}
+.counterIconColor {
+  color: #0073E6;
+  font-size: 16px;
 }
