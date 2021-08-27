@@ -7,6 +7,9 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+.mt-5rem {
+  margin-top: 5rem;
+}
 .topBannerFixed {
   background-image: url('../image/banner.jpg');
   min-height: 600px;
@@ -111,4 +114,52 @@ transition: background-color 400ms linear;
   font-size: 14px;
   font-weight: 400;
   color: #7F7E7E;
+}
+
+.summaryBannerFixed {
+  background-image: url('../image/banner.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 350px;
+}
+.summaryBannerOverlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  min-height: 350px;
+}
+.counterNumber {
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.counterTitle {
+  color: #fff;
+  font-size: 22px;
+  font-family: 'Raleway' sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.counterCardTitle {
+  color: #000;
+  font-size: 22px;
+  font-family: 'Raleway' sans-serif;
+  font-weight: 600;
+}
+.counterCardSubTitle ul {
+  margin: 0;
+  padding: 0;
+}
+.counterCardSubTitle ul li {
+  list-style-type: none;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 10px;
 }
