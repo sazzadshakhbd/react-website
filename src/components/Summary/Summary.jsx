@@ -3,6 +3,7 @@ import {Container, Row, Col, Card} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCheckCircle} from '@fortawesome/free-solid-svg-icons';
 import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 
 class Summary extends Component {
   render() {
@@ -19,11 +20,10 @@ class Summary extends Component {
                         <h1 className="counterNumber">
                           <CountUp start={0} end={100} duration={1.75}>
                             {({ countUpRef, start }) => (
-                              <div>
-                                <span ref={countUpRef} />
-                                <button onClick={start}>Start</button>
-                              </div>
-                            )}
+                              <VisibilitySensor onChange={start}>
+                                 <span ref={countUpRef} />
+                              </VisibilitySensor>
+                             )}
                           </CountUp>
                         </h1>
                         <h4 className="counterTitle">total projects</h4>
@@ -32,7 +32,15 @@ class Summary extends Component {
                     </Col>
                     <Col lg={6} md={6} sm={6}>
                       <div className="text-center">
-                        <h1 className="counterNumber">100</h1>
+                        <h1 className="counterNumber">
+                        <CountUp start={0} end={100} duration={1.75}>
+                            {({ countUpRef, start }) => (
+                              <VisibilitySensor onChange={start}>
+                                 <span ref={countUpRef} />
+                              </VisibilitySensor>
+                             )}
+                          </CountUp>
+                        </h1>
                         <h4 className="counterTitle">total clients</h4>
                         <hr className="bg-white w-25"></hr>
                       </div>
