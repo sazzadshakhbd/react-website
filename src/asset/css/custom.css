@@ -195,3 +195,20 @@ transition: background-color 400ms linear;
   font-size: 15px;
   font-weight: 400;
 }
+.CourseTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.CourseSubTitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.CourseLink {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0073E6;
+}
