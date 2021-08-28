@@ -212,3 +212,31 @@ transition: background-color 400ms linear;
   font-weight: 600;
   color: #0073E6;
 }
+.VideoCard {
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 rgba(0,115,230,0.2);
+  padding: 5rem;
+  transition: 0.5s;
+  text-align: center;
+  margin: 70px auto;
+}
+.VideoCard:hover {
+  box-shadow: 0 0 8px 0 rgba(0,115,230,0.2);
+}
+.VideoCardTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0073E6;
+}
+.VideoCardDes {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.VideoPlayIcon{
+  color: #0073E6;
+  font-size: 48px;
+  cursor: pointer;
+}
