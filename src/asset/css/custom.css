@@ -240,3 +240,26 @@ transition: background-color 400ms linear;
   font-size: 48px;
   cursor: pointer;
 }
+.ReviewSlider {
+  justify-content: center;
+  text-align: center;
+}
+.ReviewImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.ReviewSliderTitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.ReviewSliderDes {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #7F7E7E;
+}
