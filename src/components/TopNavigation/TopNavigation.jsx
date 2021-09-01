@@ -12,6 +12,7 @@ class TopNavigation extends Component {
     this.state={
       navbarBrand: 'navTitle',
       navbarBrandLogo: [whiteLogo],
+      menuIcon: 'dark',
       navbarBackground: 'navbarTransparent',
       navLinkColor: 'linkColorWhite'
     }
@@ -19,10 +20,10 @@ class TopNavigation extends Component {
 
   onScrollMethod = () => {
     if(window.scrollY > 100) {
-      this.setState({navbarBrand: 'navTitleScroll', navbarBrandLogo: [blueLogo], navbarBackground: 'navbarWhite', navLinkColor: 'linkColorBlack'})
+      this.setState({menuIcon: 'dark', navbarBrand: 'navTitleScroll', navbarBrandLogo: [blueLogo], navbarBackground: 'navbarWhite', navLinkColor: 'linkColorBlack'})
     } 
     else if (window.scrollY < 100) {
-      this.setState({navbarBrand: 'navTitle', navbarBrandLogo: [whiteLogo], navbarBackground: 'navbarTransparent', navLinkColor: 'linkColorWhite'})
+      this.setState({menuIcon: 'light', navbarBrand: 'navTitle', navbarBrandLogo: [whiteLogo], navbarBackground: 'navbarTransparent', navLinkColor: 'linkColorWhite'})
     }
   }
 
@@ -33,7 +34,7 @@ class TopNavigation extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar className={this.state.navbarBackground} fixed="top" collapseOnSelect expand="lg" variant="dark">
+        <Navbar navMenuIcon={this.state.menuIcon} className={this.state.navbarBackground} fixed="top" collapseOnSelect expand="lg">
           <Container fluid={true}>
             <Navbar.Brand className={this.state.navbarBrand}><img src={this.state.navbarBrandLogo} alt="Navbar Brand Logo"></img> Sazzad Shakh</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

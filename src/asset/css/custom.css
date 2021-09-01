@@ -63,7 +63,7 @@
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #7F7E7E;
+  color: #2b2b2b;
 }
 
 .navTitle {
@@ -101,7 +101,7 @@ transition: background-color 400ms linear;
   text-transform: uppercase;
 }
 .linkColorBlack {
-  color: #000 !important;
+  color: #2b2b2b !important;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -113,7 +113,7 @@ transition: background-color 400ms linear;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #7F7E7E;
+  color: #2b2b2b;
 }
 
 .summaryBannerFixed {
@@ -153,7 +153,7 @@ transition: background-color 400ms linear;
   padding: 10px;
 }
 .counterCardTitle {
-  color: #000;
+  color:#2b2b2b;
   font-size: 22px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -168,7 +168,7 @@ transition: background-color 400ms linear;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: #2b2b2b;
   margin-bottom: 10px;
 }
 .counterIconColor {
@@ -232,7 +232,7 @@ transition: background-color 400ms linear;
 }
 .VideoCardDes {
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 .VideoPlayIcon{
@@ -250,6 +250,7 @@ transition: background-color 400ms linear;
   border-radius: 75px;
   max-width: 100%;
   margin: 0 auto;
+  border: 1px solid #0073E6;
 }
 .ReviewSliderTitle {
   font-family: 'Raleway', sans-serif;
@@ -261,5 +262,61 @@ transition: background-color 400ms linear;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #7F7E7E;
+  color: #2b2b2b;
+}
+.Footer {
+  margin-top: 5rem;
+  box-shadow: 0 0 4px 0 rgba(0,115,230,0.2);
+}
+.Footer h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.Footer ul  {
+  margin: 0;
+  padding: 0;
+}
+.Footer ul li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2b2b2b;
+  list-style-type: none;
+  line-height: 1.8;
+}
+.Footer ul li a {
+  color: #2b2b2b;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Raleway',sans-serif;
+  text-transform: capitalize;
+}
+.Footer ul li a:hover {
+  color: #0073E6;
+  text-decoration: none;
+}
+.Footer ul.SocialLink li a  {
+  text-decoration: none;
+  color: #0073E6;
+  font-family: 'Raleway',sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.Footer ul.SocialLink li a:hover {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+.CopyRight {
+  color: #ffffff;
+  font-family: 'Montserreat',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 20px 20px 20px 20px;
+  background-color: #0073E6;
+  transition: 0.3s;
+  text-align: center;
 }
