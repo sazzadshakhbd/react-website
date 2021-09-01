@@ -3,7 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { Container, Row, Col } from 'react-bootstrap';
-import userImage from '../../asset/image/image-1.jpg';
+import userImage1 from '../../asset/image/image-1.jpg';
+import userImage2 from '../../asset/image/image-2.jpg';
+import userImage3 from '../../asset/image/image-3.jpg';
 
 class Review extends Component {
   render() {
@@ -52,7 +54,7 @@ class Review extends Component {
             <div>
               <Row className="ReviewSlider">
                 <Col sm={12} md={12} lg={7}>
-                    <img src={userImage} alt="UserImage" className="ReviewImage" />
+                    <img src={userImage1} alt="UserImage" className="ReviewImage" />
                     <h1 className="ReviewSliderTitle">Web Development</h1>
                     <h1 className="ReviewSliderDes">Enforce img alt attribute does not contain the word image, picture, or photo. Screensavers already announce img elements as an image. There is no need to use words such as image, photo, and/or picture.</h1>
                 </Col>
@@ -61,7 +63,7 @@ class Review extends Component {
             <div>
               <Row className="ReviewSlider">
                 <Col sm={12} md={12} lg={7}>
-                    <img src={userImage} alt="UserImage" className="ReviewImage" />
+                    <img src={userImage2} alt="UserImage" className="ReviewImage" />
                     <h1 className="ReviewSliderTitle">Web Development</h1>
                     <h1 className="ReviewSliderDes">Enforce img alt attribute does not contain the word image, picture, or photo. Screensavers already announce img elements as an image. There is no need to use words such as image, photo, and/or picture.</h1>
                 </Col>
@@ -70,7 +72,7 @@ class Review extends Component {
             <div>
               <Row className="ReviewSlider">
                 <Col sm={12} md={12} lg={7}>
-                    <img src={userImage} alt="UserImage" className="ReviewImage" />
+                    <img src={userImage3} alt="UserImage" className="ReviewImage" />
                     <h1 className="ReviewSliderTitle">Web Development</h1>
                     <h1 className="ReviewSliderDes">Enforce img alt attribute does not contain the word image, picture, or photo. Screensavers already announce img elements as an image. There is no need to use words such as image, photo, and/or picture.</h1>
                 </Col>
