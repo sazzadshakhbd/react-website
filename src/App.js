@@ -1,9 +1,11 @@
 import React from "react";
-import HomePage from "./pages/HomePage";
+import TopBannerAll from "./components/TopBannerAll/TopBannerAll";
+import TopNavigation from "./components/TopNavigation/TopNavigation";
 function App() {
   return (
     <div>
-      <HomePage></HomePage>
+      <TopNavigation></TopNavigation>
+      <TopBannerAll pageTitle="About Us"></TopBannerAll>
     </div>
   );
 }

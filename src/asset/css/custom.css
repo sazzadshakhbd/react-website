@@ -320,3 +320,27 @@ transition: background-color 400ms linear;
   transition: 0.3s;
   text-align: center;
 }
+.TopBannerAllFixed {
+  background-image: url('../image/banner.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+.TopBannerAllOverlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  min-height: 400px;
+}
+.TopBannerContentAll {
+  margin-top: 12rem;
+}
+.TopBannerContentAll h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+}
