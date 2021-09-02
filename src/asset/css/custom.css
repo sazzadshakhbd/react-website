@@ -199,6 +199,7 @@ transition: background-color 400ms linear;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 500;
+  margin-top: 10px;
 }
 .CourseSubTitle {
   font-family: 'Raleway', sans-serif;

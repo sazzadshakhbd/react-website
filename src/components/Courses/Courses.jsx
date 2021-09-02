@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
-import elephent from '../../asset/image/elephent.jpg';
+import elephant from '../../asset/image/elephant.jpg';
 import dolphin from '../../asset/image/dolphin.jpg';
 import dove from '../../asset/image/dove.jpg';
 import lion from '../../asset/image/lion.jpg';
@@ -15,7 +15,7 @@ class Courses extends Component {
             <Col lg={6} md={6} sm={12}>
               <Row>
                 <Col className="mb-3" lg={6} md={12} sm={12}>
-                  <img className="img-fluid" src={elephent} alt='Elephent'></img>
+                  <img className="img-fluid" src={elephant} alt='Elephant'></img>
                 </Col>
                 <Col className="mb-3" lg={6} md={12} sm={12}>
                   <h3 className="CourseTitle">Web Development</h3>
