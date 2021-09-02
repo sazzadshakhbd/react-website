@@ -1,10 +1,10 @@
 import React from "react";
-import CoursePage from "./pages/CoursePage";
+import PortfolioPage from "./pages/PortfolioPage";
 
 function App() {
   return (
     <div>
-      <CoursePage></CoursePage>
+      <PortfolioPage></PortfolioPage>
     </div>
   );
 }
