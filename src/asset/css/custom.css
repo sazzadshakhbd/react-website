@@ -415,3 +415,7 @@ transition: background-color 400ms linear;
 .RefundPolicy ul li {
   margin-bottom: 1rem;
 }
+.TermsDiscription p {
+  margin-top: 4rem;
+  margin-bottom: 0;
+}

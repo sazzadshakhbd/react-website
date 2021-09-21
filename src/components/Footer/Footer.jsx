@@ -38,7 +38,7 @@ class Footer extends Component {
               <h3>legal</h3>
               <ul>
                 <li><Link to="/refund">refund policy</Link></li>
-                <li><a href="terms.html" target='_blank'>terms and condition</a></li>
+                <li><Link to="/terms-and-condition">terms and condition</Link></li>
                 <li><a href="policy.html" target='_blank'>privacy policy</a></li>
               </ul>
             </Col>
