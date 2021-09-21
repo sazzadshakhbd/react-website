@@ -4,11 +4,9 @@ import AppRoute from "./router/AppRoute";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <AppRoute></AppRoute>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <AppRoute></AppRoute>
+    </BrowserRouter>
   );
 }
 

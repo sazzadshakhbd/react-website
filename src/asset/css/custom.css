@@ -420,3 +420,25 @@ transition: background-color 400ms linear;
   margin-top: 4rem;
   margin-bottom: 0;
 }
+.ProjectDetails {
+  padding-top: 4rem;
+}
+.ProjectDetails h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.ProjectDetails p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2b2b2b;
+}
+.ProjectDetails ul li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2b2b2b;
+  margin-bottom: 5px;
+}

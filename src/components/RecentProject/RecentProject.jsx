@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import BabyImage1 from '../../asset/image/image-1.jpg';
 import BabyImage2 from '../../asset/image/image-2.jpg';
 import BabyImage3 from '../../asset/image/image-3.jpg';
@@ -20,7 +21,7 @@ class RecentProject extends Component {
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
                   </Card.Text>
-                  <Button variant="primary">Details</Button>
+                  <Button variant="primary"><Link to="/project-details">Details</Link></Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -33,7 +34,7 @@ class RecentProject extends Component {
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
                   </Card.Text>
-                  <Button variant="primary">Details</Button>
+                  <Button variant="primary"><Link to="/project-details">Details</Link></Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -46,7 +47,7 @@ class RecentProject extends Component {
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
                   </Card.Text>
-                  <Button variant="primary">Details</Button>
+                  <Button variant="primary"><Link to="/project-details">Details</Link></Button>
                 </Card.Body>
               </Card>
             </Col>

@@ -9,11 +9,11 @@ import AboutPage from '../pages/AboutPage';
 import RefundPage from '../pages/RefundPage';
 import TermsPage from '../pages/TermsPage';
 import PrivacyPolicyPage from '../pages/PrivacyPolicyPage';
+import ProjectDetailsPage from '../pages/ProjectDetailsPage';
 
 class AppRoute extends Component {
   render() {
     return (
-      <div>
         <Fragment>
           <Switch>
             <Route exact path="/" component={HomePage}></Route>
@@ -25,9 +25,9 @@ class AppRoute extends Component {
             <Route exact path="/refund" component={RefundPage}></Route>
             <Route exact path="/terms-and-condition" component={TermsPage}></Route>
             <Route exact path="/privacy-policy" component={PrivacyPolicyPage}></Route>
+            <Route exact path="/project-details" component={ProjectDetailsPage}></Route>
           </Switch>
         </Fragment>
-      </div>
     );
   }
 }
