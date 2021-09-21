@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
@@ -36,7 +37,7 @@ class Footer extends Component {
             <Col lg={3} sm={12} md={6} className="p-5">
               <h3>legal</h3>
               <ul>
-                <li><a href="refund.html" target='_blank'>refund policy</a></li>
+                <li><Link to="/refund">refund policy</Link></li>
                 <li><a href="terms.html" target='_blank'>terms and condition</a></li>
                 <li><a href="policy.html" target='_blank'>privacy policy</a></li>
               </ul>

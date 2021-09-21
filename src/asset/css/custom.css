@@ -409,3 +409,9 @@ transition: background-color 400ms linear;
   color: #0073E6;
   text-decoration: none;
 }
+.RefundPolicy ul {
+  padding-top: 4rem;
+}
+.RefundPolicy ul li {
+  margin-bottom: 1rem;
+}
