@@ -100,16 +100,26 @@ transition: background-color 400ms linear;
 transition: background-color 400ms linear;
 }
 .linkColorWhite {
-  color: #fff !important;
+  color: #fff;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
+.linkColorWhite:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.linkColorWhite.active {
+  color: #00a8ee;
+}
 .linkColorBlack {
-  color: #2b2b2b !important;
+  color: #2b2b2b;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+}
+.linkColorBlack.active {
+  color: #00a8ee;
 }
 
 
