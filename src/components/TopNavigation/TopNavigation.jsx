@@ -4,6 +4,7 @@ import '../../asset/css/custom.css';
 import whiteLogo from '../../asset/image/navlogo.svg';
 import blueLogo from '../../asset/image/navlogoScroll.svg';
 import {Navbar, Container, Nav} from 'react-bootstrap';
+import {NavLink} from 'react-router-dom'
 
 class TopNavigation extends Component {
 
@@ -41,12 +42,12 @@ class TopNavigation extends Component {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto"></Nav>
               <Nav>
-                <Nav.Link className={this.state.navLinkColor} href="#home">home</Nav.Link>
-                <Nav.Link className={this.state.navLinkColor} href="#services">services</Nav.Link>
-                <Nav.Link className={this.state.navLinkColor} href="#courses">courses</Nav.Link>
-                <Nav.Link className={this.state.navLinkColor} href="#portfolio">portfolio</Nav.Link>
-                <Nav.Link className={this.state.navLinkColor} href="#contact">contact</Nav.Link>
-                <Nav.Link className={this.state.navLinkColor} href="#about">about</Nav.Link>
+                <Nav.Link><NavLink className={this.state.navLinkColor} to="/">home</NavLink></Nav.Link>
+                <Nav.Link><NavLink className={this.state.navLinkColor} to="/services">services</NavLink></Nav.Link>
+                <Nav.Link><NavLink className={this.state.navLinkColor} to="/courses">courses</NavLink></Nav.Link>
+                <Nav.Link><NavLink className={this.state.navLinkColor} to="/portfolio">portfolio</NavLink></Nav.Link>
+                <Nav.Link><NavLink className={this.state.navLinkColor} to="/contact">contact</NavLink></Nav.Link>
+                <Nav.Link><NavLink className={this.state.navLinkColor} to="/about">about</NavLink></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
