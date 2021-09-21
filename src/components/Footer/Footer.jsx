@@ -29,9 +29,8 @@ class Footer extends Component {
             <Col lg={3} sm={12} md={6} className="p-5">
               <h3>information</h3>
               <ul>
-                <li><a href="about.html" target='_blank'>about me</a></li>
-                <li><a href="resume.html" target='_blank'>my resume</a></li>
-                <li><a href="contact.html" target='_blank'>contact me</a></li>
+                <li><Link to="/about">about me</Link></li>
+                <li><Link to="/contact">contact me</Link></li>
               </ul>
             </Col>
             <Col lg={3} sm={12} md={6} className="p-5">
@@ -39,7 +38,7 @@ class Footer extends Component {
               <ul>
                 <li><Link to="/refund">refund policy</Link></li>
                 <li><Link to="/terms-and-condition">terms and condition</Link></li>
-                <li><a href="policy.html" target='_blank'>privacy policy</a></li>
+                <li><Link to="privacy-policy">privacy policy</Link></li>
               </ul>
             </Col>
           </Row>
