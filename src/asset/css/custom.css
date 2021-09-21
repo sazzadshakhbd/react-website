@@ -7,6 +7,11 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+.form-control:focus {
+  border-radius: 2px;
+  border-color: #0073E6;
+  box-shadow: 0 0 4px 0 rgba(0,115,230,0.2);
+}
 .mt-5rem {
   margin-top: 5rem;
 }
@@ -360,4 +365,37 @@ transition: background-color 400ms linear;
   font-weight: 400;
   color: #2b2b2b;
   text-align: justify;
+}
+.ContactSection {
+  padding: 4rem 0 0 0;
+}
+.ContactSection h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.ContactSection ul  {
+  margin: 0;
+  padding: 0;
+}
+.ContactSection ul li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2b2b2b;
+  list-style-type: none;
+  line-height: 2.2;
+}
+.ContactSection ul li a {
+  color: #2b2b2b;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Raleway',sans-serif;
+  text-transform: capitalize;
+}
+.ContactSection ul li a:hover {
+  color: #0073E6;
+  text-decoration: none;
 }
