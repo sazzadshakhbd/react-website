@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import {Route, Switch} from 'react-router-dom';
-import Courses from '../components/Courses/Courses';
+import Courses from '../pages/CoursePage';
 import HomePage from '../pages/HomePage';
 import ServicePage from '../pages/ServicePage';
 import PortfolioPage from '../pages/PortfolioPage';
