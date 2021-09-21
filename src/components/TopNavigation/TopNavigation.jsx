@@ -8,14 +8,15 @@ import {NavLink} from 'react-router-dom'
 
 class TopNavigation extends Component {
 
-  constructor() {
+  constructor(props) {
     super();
     this.state={
       navbarBrand: 'navTitle',
       navbarBrandLogo: [whiteLogo],
       menuIcon: 'dark',
       navbarBackground: 'navbarTransparent',
-      navLinkColor: 'linkColorWhite'
+      navLinkColor: 'linkColorWhite',
+      PageBarTitle: props.title
     }
   }
 
@@ -35,6 +36,7 @@ class TopNavigation extends Component {
   render() {
     return (
       <Fragment>
+        <title>{this.props.PageBarTitle}</title>
         <Navbar navMenuIcon={this.state.menuIcon} className={this.state.navbarBackground} fixed="top" collapseOnSelect expand="lg">
           <Container fluid={true}>
             <Navbar.Brand className={this.state.navbarBrand}><img src={this.state.navbarBrandLogo} alt="Navbar Brand Logo"></img> Sazzad Shakh</Navbar.Brand>

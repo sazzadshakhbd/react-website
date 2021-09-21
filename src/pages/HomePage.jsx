@@ -15,7 +15,7 @@ class HomePage extends Component {
     return (
       <Fragment>
         <div>
-          <TopNavigation></TopNavigation>
+          <TopNavigation PageBarTitle="Home"></TopNavigation>
           <TopBanner></TopBanner>
           <Services></Services>
           <Analysis></Analysis>

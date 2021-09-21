@@ -9,7 +9,7 @@ class AboutPage extends Component {
     return (
       <Fragment>
         <div>
-          <TopNavigation></TopNavigation>
+          <TopNavigation PageBarTitle="About"></TopNavigation>
           <TopBannerAll pageTitle="About Me"></TopBannerAll>
           <AboutUsContent></AboutUsContent>
           <Footer></Footer>

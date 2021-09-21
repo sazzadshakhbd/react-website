@@ -9,7 +9,7 @@ class CoursePage extends Component {
     return (
       <div>
         <Fragment>
-          <TopNavigation></TopNavigation>
+          <TopNavigation PageBarTitle="Course"></TopNavigation>
           <TopBannerAll pageTitle='My Courses'></TopBannerAll>
           <AllCourses></AllCourses>
           <Footer></Footer>
