@@ -27,7 +27,7 @@ class AppRoute extends Component {
             <Route exact path="/privacy-policy" component={PrivacyPolicyPage}></Route>
             <Route exact path="/project-details" component={ProjectDetailsPage}></Route>
           </Switch>
-        </Fragment>
+        </Fragment> 
     );
   }
 }
