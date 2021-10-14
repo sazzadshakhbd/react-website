@@ -4,6 +4,7 @@ import elephant from '../../asset/image/elephant.jpg';
 import dolphin from '../../asset/image/dolphin.jpg';
 import dove from '../../asset/image/dove.jpg';
 import lion from '../../asset/image/lion.jpg';
+import { Link } from 'react-router-dom';
 
 class Courses extends Component {
   render() {
@@ -20,7 +21,7 @@ class Courses extends Component {
                 <Col className="mb-3" lg={6} md={12} sm={12}>
                   <h3 className="CourseTitle">Web Development</h3>
                   <p className="CourseSubTitle">I build native and cross platform mobile app for your business app for your business</p>
-                  <a className="CourseLink" href="details.html">Details</a>
+                  <Link className="CourseLink" to="/course-details">Details</Link>
                 </Col>
               </Row>
             </Col>
@@ -32,7 +33,7 @@ class Courses extends Component {
                 <Col lg={6} md={12} sm={12}>
                   <h3 className="CourseTitle">Web Development</h3>
                   <p className="CourseSubTitle">I build native and cross platform mobile app for your business app for your business</p>
-                  <a className="CourseLink" href="details.html">Details</a>
+                  <Link className="CourseLink" to="/course-details">Details</Link>
                 </Col>
               </Row>
             </Col>
@@ -44,7 +45,7 @@ class Courses extends Component {
                 <Col lg={6} md={12} sm={12}>
                   <h3 className="CourseTitle">Web Development</h3>
                   <p className="CourseSubTitle">I build native and cross platform mobile app for your business app for your business</p>
-                  <a className="CourseLink" href="details.html">Details</a>
+                  <Link className="CourseLink" to="/course-details">Details</Link>
                 </Col>
               </Row>
             </Col>
@@ -56,7 +57,7 @@ class Courses extends Component {
                 <Col lg={6} md={12} sm={12}>
                   <h3 className="CourseTitle">Web Development</h3>
                   <p className="CourseSubTitle">I build native and cross platform mobile app for your business app for your business</p>
-                  <a className="CourseLink" href="details.html">Details</a>
+                  <Link className="CourseLink" to="/course-details">Details</Link>
                 </Col>
               </Row>
             </Col>
