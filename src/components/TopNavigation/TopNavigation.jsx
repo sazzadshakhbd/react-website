@@ -39,7 +39,7 @@ class TopNavigation extends Component {
         <title>{this.props.PageBarTitle}</title>
         <Navbar navMenuIcon={this.state.menuIcon} className={this.state.navbarBackground} fixed="top" collapseOnSelect expand="lg">
           <Container fluid={true}>
-            <Navbar.Brand className={this.state.navbarBrand}><img src={this.state.navbarBrandLogo} alt="Navbar Brand Logo"></img> Sazzad Shakh</Navbar.Brand>
+            <Navbar.Brand><NavLink className={this.state.navbarBrand} to="/"><img src={this.state.navbarBrandLogo} alt="Navbar Brand Logo"></img> Sazzad Shakh</NavLink></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto"></Nav>
